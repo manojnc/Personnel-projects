@@ -11,7 +11,7 @@ try:
 
     for row in csv_reader:
         dest_zip=row[0]
-        url="https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins={0}&destinations={1}&key=AIzaSyD53iK5pkHysczcQUJdzptxoKARux_pec8".format(origin_zip,dest_zip)
+        url="https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins={0}&destinations={1}&key=".format(origin_zip,dest_zip)
         response=requests.get(url)
         #print("full output of response {0}".format(response.json()))
         try:
